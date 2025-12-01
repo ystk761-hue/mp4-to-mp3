@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP4 to MP3 Converter - Dark Elegant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>MP4 → MP3 Converter</h1>
+
+    <div class="box">
+        <input type="file" id="videoInput" accept="video/mp4" />
+        <button id="convertBtn">Convert</button>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Mengonversi... Harap tunggu</p>
+        </div>
+
+        <a id="downloadBtn" class="download hidden">Download MP3</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<!-- FFmpeg WASM FULL PACKAGE -->
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.7/dist/ffmpeg.min.js"></script>
+
+</body>
+</html>
