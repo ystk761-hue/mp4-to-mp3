@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d12;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+}
+
+h1 {
+    color: #4ea3ff;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.box {
+    background: #14141c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(78, 163, 255, 0.15);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #1c1c26;
+    border: 1px solid #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4ea3ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #66b7ff;
+}
+
+.loading {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #3a3a48;
+    border-top: 4px solid #4ea3ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.download {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    color: black;
+    background: #4ea3ff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download.clicked {
+    background: #777;
+    cursor: default;
+}
